@@ -1,0 +1,94 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F1F1F1;
+}
+
+.container{
+  position: relative;
+  cursor: pointer;
+}
+
+img{
+  width: 710px;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.layer{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #FBC6A4;
+  width: 0px;
+  height: 400px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.container:hover .layer-1{
+  animation: firstLayer 1s linear;
+  background: #FBC6A4;
+}
+
+.container:hover .layer-2{
+  animation: secondLayer 1s linear;
+  background: #F4A9A8;
+  animation-delay: 0.3s;
+}
+
+.container:hover .layer-3{
+  animation: thirdLayer 1s linear;
+  background: #CE97B0;
+  animation-delay: 0.6s;
+}
+
+@keyframes firstLayer {
+  0%{
+    width: 0px;
+    left: 0px;
+  }
+  50%{
+    width: 710px;
+    left: 0px;
+  }
+  100%{
+    width: 0px;
+    left: 710px;
+  }
+}
+
+@keyframes secondLayer {
+  0%{
+    width: 0px;
+    left: 0px;
+  }
+  50%{
+    width: 710px;
+    left: 0px;
+  }
+  100%{
+    width: 0px;
+    left: 710px;
+  }
+}
+
+@keyframes thirdLayer {
+  0%{
+    width: 0px;
+    left: 0px;
+  }
+  50%{
+    width: 710px;
+    left: 0px;
+  }
+  100%{
+    width: 0px;
+    left: 710px;
+  }
+}
